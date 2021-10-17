@@ -33,12 +33,12 @@ public class PolymorphismCasting {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        A obja = new B(); //downcasting
+        A obja = new B(); //upcasting
         obja.numA = 10;
         
         System.out.println(obja.numA);
         
-        B objb = (B)obja;
+        B objb = (B)obja; //downcasting
         objb.numB = 7;
         System.out.println(objb.numA);
         System.out.println(objb.numB);
